@@ -6,5 +6,7 @@
   chmod +x krew &&
   ./krew install &&
   export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+  cp krew ~/.krew/bin/kubectl-krew
+  exec bash
 )
-                                                                                                                                                                             
+     
